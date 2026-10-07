@@ -1,0 +1,16 @@
+[
+    {
+        "id": "a138d30b9534d593",
+        "name": "John Doe",
+        "email": "johndoe@gmail.com",
+        "password_hash": "$2y$12$6t71K11JlfAyv\/5pspgvKeHM6x6cpBsOPFf4RA0.QUS2avYEGaAVe",
+        "created_at": "2026-10-07T14:21:02+00:00"
+    },
+    {
+        "id": "537d54c2191f904f",
+        "name": "Steven Deligero",
+        "email": "stevendeligero@gmail.com",
+        "password_hash": "$2y$12$lKKYd22F62u.4pUCX.6APOnx64qcvnhQ78JVq4Nms1xb9cS5MzHI2",
+        "created_at": "2026-10-07T14:25:32+00:00"
+    }
+]

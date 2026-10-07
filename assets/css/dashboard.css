@@ -1,0 +1,33 @@
+/* dashboard.css — only used by dashboard.php */
+
+.card--dashboard {
+    width: min(100%, 34.5rem);
+}
+
+.profile {
+    margin: 0 0 1.75rem;
+    padding: 1rem 1.1rem;
+    background: rgba(243, 206, 213, 0.88);
+    border: 1px solid var(--rose-600);
+    border-radius: 0.375rem;
+    color: var(--rose-700);
+}
+
+.profile > div + div {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(97, 24, 44, 0.25);
+}
+
+.profile dt {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--rose-500);
+}
+
+.profile dd {
+    margin: 0.15rem 0 0;
+    font-size: 1.05rem;
+    overflow-wrap: anywhere;
+}

@@ -1,0 +1,86 @@
+/* base.css — design tokens, reset, fonts, gradient background (shared by every page) */
+
+:root {
+    /* Palette (from the Figma color palette, light → dark) */
+    --rose-100: #F3CED5;
+    --rose-200: #DE7890;
+    --rose-300: #C4536F;
+    --rose-400: #AA3C57;
+    --rose-500: #872641;
+    --rose-600: #61182C;
+    --rose-700: #3A0E1B;
+
+    /* Typography */
+    --font-heading: "Joan", Georgia, "Times New Roman", serif;
+    --font-body: "Judson", Georgia, "Times New Roman", serif;
+
+    /* Diagonal gradient used on the page background */
+    /* Solid rose-300 on the left, easing through a dusty rose (rose-200 mixed
+       with rose-100) into a pale blush on the right, as in the Figma frames. */
+    --bg-gradient: linear-gradient(
+        115deg,
+        var(--rose-300) 0%,
+        var(--rose-300) 36%,
+        #D58C9E 60%,
+        #E4BAC3 82%,
+        #E8C6CD 100%
+    );
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--rose-100);
+    background-color: var(--rose-300);
+    background-image: var(--bg-gradient);
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+button,
+input {
+    font: inherit;
+    color: inherit;
+}
+
+/* Centers the card in the viewport */
+.page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
